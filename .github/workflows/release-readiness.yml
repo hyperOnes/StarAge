@@ -1,0 +1,59 @@
+name: Release Readiness
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  test-matrix:
+    name: "pytest (${{ matrix.os }}, py${{ matrix.python-version }})"
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package + deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[science,dev]"
+
+      - name: Run full suite
+        run: |
+          PYTHONPATH=src python -m pytest -ra --durations=25 --durations-min=0.1
+
+  smoke-clean-install:
+    name: "clean-install smoke (ubuntu, py3.12)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fresh install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ".[science]"
+
+      - name: CLI smoke
+        run: |
+          starrage-sim --help
+          starrage-sim run --config configs/ci_science_smoke.json --out /tmp/starrage-ci-smoke
+

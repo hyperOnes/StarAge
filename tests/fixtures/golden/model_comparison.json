@@ -1,0 +1,110 @@
+{
+  "assumptions_hash": "bb353e16f1a53a60a82cec0274f89aa495f42fe9c99acd6b1317e43d7fbad0d8",
+  "backend": {
+    "requested": "surrogate",
+    "used": "numpy_fallback"
+  },
+  "config_hash": "7ea15897d178c8f45681ec0976078a92849b6eb0da668df37319144e49332e9c",
+  "git_commit": "golden-commit",
+  "metric": "loo",
+  "preprocessing_hash": "18d6d2a8641244d0ea70492c9fa41f18011f1393178caeb05f107304f4d8379e",
+  "preprocessing_version": "science-preprocess-v1",
+  "provenance": {
+    "assumptions_hash": "bb353e16f1a53a60a82cec0274f89aa495f42fe9c99acd6b1317e43d7fbad0d8",
+    "config_hash": "7ea15897d178c8f45681ec0976078a92849b6eb0da668df37319144e49332e9c",
+    "git_commit": "golden-commit",
+    "preprocessing_hash": "18d6d2a8641244d0ea70492c9fa41f18011f1393178caeb05f107304f4d8379e",
+    "preprocessing_version": "science-preprocess-v1",
+    "schema_version": "science-schema-v1",
+    "science_data_hash": "51afaebd82ef6cd8239a14b70cbff4cb34c99ed6be91e62339076c7ac3ea6602",
+    "seed": 2027
+  },
+  "ranking": [
+    {
+      "delta": 0.0,
+      "diagnostics": {
+        "assumption_penalty": 0.0,
+        "divergences": 0,
+        "ess_bulk_min": 90,
+        "ppc_calibration": 0.6041181761,
+        "r_hat_max": 1.01,
+        "sigma2": 0.0044852183
+      },
+      "loo": -1000.6156677883,
+      "model_id": "M1",
+      "ppc_error": 0.3958818239,
+      "rank": 1,
+      "score": -1000.6156677883,
+      "waic": -1073.8473283767,
+      "weight": 1.0
+    },
+    {
+      "delta": 1304.1425201826,
+      "diagnostics": {
+        "assumption_penalty": 0.0,
+        "divergences": 0,
+        "ess_bulk_min": 90,
+        "ppc_calibration": 0.0,
+        "r_hat_max": 1.01,
+        "sigma2": 0.0918021393
+      },
+      "loo": 303.5268523943,
+      "model_id": "M2",
+      "ppc_error": 1.0443403823,
+      "rank": 2,
+      "score": 303.5268523943,
+      "waic": 230.2951918059,
+      "weight": 0.0
+    },
+    {
+      "delta": 1506.8458552289,
+      "diagnostics": {
+        "assumption_penalty": 0.0,
+        "divergences": 0,
+        "ess_bulk_min": 90,
+        "ppc_calibration": 0.0,
+        "r_hat_max": 1.01,
+        "sigma2": 0.146768466
+      },
+      "loo": 506.2301874406,
+      "model_id": "M4",
+      "ppc_error": 1.2887029109,
+      "rank": 3,
+      "score": 506.2301874406,
+      "waic": 432.9985268522,
+      "weight": 0.0
+    },
+    {
+      "delta": 1624.0107972823,
+      "diagnostics": {
+        "assumption_penalty": 180.0,
+        "divergences": 0,
+        "ess_bulk_min": 90,
+        "ppc_calibration": 0.0,
+        "r_hat_max": 1.01,
+        "sigma2": 0.1269006835
+      },
+      "loo": 623.3951294939,
+      "model_id": "M3",
+      "ppc_error": 1.2080929662,
+      "rank": 4,
+      "score": 623.3951294939,
+      "waic": 550.1634689055,
+      "weight": 0.0
+    }
+  ],
+  "schema_version": "science-schema-v1",
+  "science_data_hash": "51afaebd82ef6cd8239a14b70cbff4cb34c99ed6be91e62339076c7ac3ea6602",
+  "seed": 2027,
+  "stability": {
+    "by_tissue": 1.0,
+    "leave_one_donor_out": 1.0
+  },
+  "top_margin_vs_competitors": {
+    "M2": 1304.1425201826,
+    "M3": 1624.0107972823,
+    "M4": 1506.8458552289
+  },
+  "top_model": "M1",
+  "top_score": -1000.6156677883
+}

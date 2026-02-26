@@ -1,0 +1,14 @@
+{
+  "primary": {
+    "config": "/Users/sebastian/Fisac/StarAge/configs/validation_fixed_grid_5x5_full.yaml",
+    "out_dir": "/Users/sebastian/Fisac/StarAge/reports/validation_fixed_grid_5x5_full",
+    "global_tranche1_verdict": false,
+    "milestones": {
+      "mutation": false,
+      "fucci": true,
+      "washout": true,
+      "synergy": true
+    }
+  },
+  "sensitivity": []
+}

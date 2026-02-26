@@ -1,0 +1,14 @@
+{
+  "washout_pass": true,
+  "washout_rule": "for each required tissue/mark (on-mark only unless gate_off_mark_required=true): finite half-life CI, finite_fraction>=0.95, lower95(retained_effect_at_horizon)>=washout_retention_min, and predictive holdout quality check",
+  "strict_require_all_tissues": true,
+  "strict_require_all_tissue_age": false,
+  "maximin_best_under_viability_plus_washout": {
+    "A": 1.624,
+    "C": 0.16175,
+    "maximin_min_tissue_mutation_ci_low": 1.9326449005331878,
+    "min_tissue_viability_ci_low": 0.8667324431887831,
+    "all_tissue_mutation_pass": false
+  },
+  "strict_pass_doses": []
+}

@@ -1,0 +1,50 @@
+# OS artifacts
+.DS_Store
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.pyre/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# Python environments and packaging outputs
+.venv/
+venv/
+env/
+ENV/
+.python-version
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Coverage and test outputs
+.coverage
+.coverage.*
+htmlcov/
+
+# Node/npm caches (used by npx and tooling)
+node_modules/
+.npm-cache/
+.npm/
+.pnpm-store/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Local simulation artifacts
+full_sim_*/
+full_sim_*.zip
+
+# Generated report payloads (can exceed GitHub 100MB file limit)
+reports/*/raw_records.csv

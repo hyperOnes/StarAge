@@ -1,0 +1,73 @@
+{
+  "seed": 2027,
+  "runtime_profile": "quick",
+  "tissues": ["blood_cd34", "gut_lgr5"],
+  "donor_ages": [25, 60],
+  "dose_ranges": {
+    "amplification": {"min": 1.0, "max": 1.2, "n_coarse": 2},
+    "cyclin_throttle": {"min": 0.08, "max": 0.12, "n_coarse": 2},
+    "refine": {"top_k": 1, "step_fraction": 0.5, "neighbor_radius": 1}
+  },
+  "washout_priors": {
+    "blood_cd34": {"on_half_life": 80.0, "off_half_life": 140.0, "measurement_cv": 0.08},
+    "gut_lgr5": {"on_half_life": 60.0, "off_half_life": 110.0, "measurement_cv": 0.10}
+  },
+  "viability_threshold": 0.80,
+  "mutation_reduction_target": 1.80,
+  "gate_rule": "confidence_bound_95",
+  "fucci_threshold": 2.0,
+  "fucci_leakage_cap": 0.45,
+  "washout_r2_floor": 0.85,
+  "synergy_stability_min": 0.35,
+  "profiles": {
+    "quick": {"replicates_per_condition": 4, "n_divisions": 10, "fucci_cells": 10, "bootstrap_n": 10, "workers": 1},
+    "full": {"replicates_per_condition": 6, "n_divisions": 12, "fucci_cells": 12, "bootstrap_n": 12, "workers": 1}
+  },
+  "tissue_params": {
+    "blood_cd34": {"alpha": 1.0, "beta": 0.2, "v0": 0.97, "p1": 0.01, "p2": 0.075, "p3": 0.03, "p4": 0.03},
+    "gut_lgr5": {"alpha": 0.95, "beta": 0.18, "v0": 0.96, "p1": 0.012, "p2": 0.08, "p3": 0.03, "p4": 0.032}
+  },
+  "baseline_mutation_rates": {
+    "blood_cd34": {"25": 0.95, "60": 1.25},
+    "gut_lgr5": {"25": 1.05, "60": 1.45}
+  },
+  "global_noise": {
+    "mutation_noise_sigma": 0.1,
+    "viability_noise_sigma": 0.01,
+    "expression_noise_sigma": 0.08,
+    "stress_scale": 0.5,
+    "stress_penalty": 0.02,
+    "leakage_baseline": 0.34,
+    "leakage_noise_sigma": 0.03
+  },
+  "objective": {"synergy_k": 2.0},
+  "sensitivity_configs": [],
+  "science_mode": {"enabled": true, "data_mode": "synthetic_only"},
+  "science_data": {"allow_synthetic_fallback": true},
+  "locus_panel": [
+    {"tissue": "blood_cd34", "gene": "MSH2", "locus_id": "blood_msh2_l1"},
+    {"tissue": "blood_cd34", "gene": "MLH1", "locus_id": "blood_mlh1_l1"},
+    {"tissue": "gut_lgr5", "gene": "MSH2", "locus_id": "gut_msh2_l1"},
+    {"tissue": "gut_lgr5", "gene": "MLH1", "locus_id": "gut_mlh1_l1"}
+  ],
+  "mechanism_models": {"enabled_families": ["M1", "M2", "M3", "M4"]},
+  "inference": {
+    "backend": "surrogate",
+    "vi_settings": {"advi_steps": 300},
+    "nuts_settings": {"draws": 60, "tune": 60, "target_accept": 0.9},
+    "comparison_metric": "loo",
+    "sensitivity_backend": "surrogate"
+  },
+  "claim_thresholds": {
+    "posterior_probability": 0.70,
+    "claim1": {"delta_methylation_min": 0.02, "min_rows_per_locus": 4},
+    "claim2": {"ppc_error_max": 0.50},
+    "claim3": {"effect_min": 0.01},
+    "claim4": {"mutation_reduction_min": 0.01},
+    "claim5": {"model_margin_min": 1.0, "stability_min": 0.45}
+  },
+  "verdict_policy": {
+    "science_as_hard_blocker": false,
+    "allow_synthetic_science_pass_for_dev": false
+  }
+}

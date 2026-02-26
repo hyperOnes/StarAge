@@ -1,0 +1,625 @@
+{
+  "milestones": {
+    "mutation": {
+      "pass": false,
+      "estimate": null,
+      "ci": null,
+      "evidence": []
+    },
+    "fucci": {
+      "pass": true,
+      "estimate": 781.4927411953952,
+      "ci": [
+        4.200311953594012,
+        17070.579779171658
+      ],
+      "evidence": [
+        {
+          "amplification": 0.5,
+          "cyclin_throttle": 0.05,
+          "mutation_reduction_mean": 1.3776474186733825,
+          "mutation_reduction_median": 1.3654868766770856,
+          "mutation_reduction_std": 0.04400670021738824,
+          "mutation_reduction_n": 1080,
+          "mutation_reduction_ci_low": 1.3089430503133381,
+          "mutation_reduction_ci_high": 1.462351144142615,
+          "viability_mean": 0.9613217568365751,
+          "viability_median": 0.9618716481813743,
+          "viability_std": 0.015804647141499494,
+          "viability_n": 1080,
+          "viability_ci_low": 0.9298790237380582,
+          "viability_ci_high": 0.9906593961688601,
+          "sphase_fold_mean": 781.4927411953952,
+          "sphase_fold_median": 4.683182735476485,
+          "sphase_fold_std": 3770.6343394010746,
+          "sphase_fold_n": 1080,
+          "sphase_fold_ci_low": 4.200311953594012,
+          "sphase_fold_ci_high": 17070.579779171658,
+          "leakage_mean": 0.3400316942478448,
+          "leakage_median": 0.3399585472140956,
+          "leakage_std": 0.003448465950333798,
+          "leakage_n": 1080,
+          "leakage_ci_low": 0.3330886002384875,
+          "leakage_ci_high": 0.3467996711557748
+        },
+        {
+          "amplification": 0.5,
+          "cyclin_throttle": 0.08000000000000002,
+          "mutation_reduction_mean": 1.3835186359050575,
+          "mutation_reduction_median": 1.37188519198379,
+          "mutation_reduction_std": 0.044457484967026735,
+          "mutation_reduction_n": 1080,
+          "mutation_reduction_ci_low": 1.319076576998936,
+          "mutation_reduction_ci_high": 1.4705300629189932,
+          "viability_mean": 0.9592536637722996,
+          "viability_median": 0.9592471904357488,
+          "viability_std": 0.01581153161932762,
+          "viability_n": 1080,
+          "viability_ci_low": 0.9290504860508019,
+          "viability_ci_high": 0.991639876906247,
+          "sphase_fold_mean": 815.847165752243,
+          "sphase_fold_median": 4.668441755700442,
+          "sphase_fold_std": 3762.96118593018,
+          "sphase_fold_n": 1080,
+          "sphase_fold_ci_low": 4.208804648369529,
+          "sphase_fold_ci_high": 17461.75706403283,
+          "leakage_mean": 0.3399311323621481,
+          "leakage_median": 0.33983965460082866,
+          "leakage_std": 0.0032813566406337115,
+          "leakage_n": 1080,
+          "leakage_ci_low": 0.3335508252228938,
+          "leakage_ci_high": 0.3462376018143416
+        },
+        {
+          "amplification": 0.5,
+          "cyclin_throttle": 0.11000000000000001,
+          "mutation_reduction_mean": 1.3911943251190604,
+          "mutation_reduction_median": 1.3784973400963154,
+          "mutation_reduction_std": 0.04519649234862495,
+          "mutation_reduction_n": 1080,
+          "mutation_reduction_ci_low": 1.324603115176803,
+          "mutation_reduction_ci_high": 1.4805927147129165,
+          "viability_mean": 0.9592416125201975,
+          "viability_median": 0.9590866442595676,
+          "viability_std": 0.01574949922699895,
+          "viability_n": 1080,
+          "viability_ci_low": 0.9267870120731181,
+          "viability_ci_high": 0.989622986902684,
+          "sphase_fold_mean": 817.8252804195581,
+          "sphase_fold_median": 4.664493161448126,
+          "sphase_fold_std": 3784.1536815839677,
+          "sphase_fold_n": 1080,
+          "sphase_fold_ci_low": 4.197345963261649,
+          "sphase_fold_ci_high": 17241.543947483126,
+          "leakage_mean": 0.3400346732885028,
+          "leakage_median": 0.3398733641171454,
+          "leakage_std": 0.0034443549412379727,
+          "leakage_n": 1080,
+          "leakage_ci_low": 0.3335412878733927,
+          "leakage_ci_high": 0.3471856481551675
+        }
+      ]
+    },
+    "washout": {
+      "pass": false,
+      "estimate": null,
+      "ci": null,
+      "evidence": {
+        "passed_rows": [],
+        "failed_rows": [
+          {
+            "tissue": "blood_cd34",
+            "mark": "off",
+            "half_life_mean": 214.47256678892342,
+            "half_life_ci_low": 100.97986529691633,
+            "half_life_ci_high": 507.6524330140994,
+            "half_life_std": 710.9128547747359,
+            "r2_mean": 0.5327710602279402,
+            "finite_fraction": 0.9978070175438597
+          },
+          {
+            "tissue": "blood_cd34",
+            "mark": "on",
+            "half_life_mean": 99.59011551966437,
+            "half_life_ci_low": 66.99935651696376,
+            "half_life_ci_high": 160.69245358122322,
+            "half_life_std": 24.985216417083507,
+            "r2_mean": 0.7786437022996123,
+            "finite_fraction": 1.0
+          },
+          {
+            "tissue": "gut_lgr5",
+            "mark": "off",
+            "half_life_mean": 145.22931269556716,
+            "half_life_ci_low": 74.00884613911548,
+            "half_life_ci_high": 302.92988197096423,
+            "half_life_std": 862.4987499150353,
+            "r2_mean": 0.5881837935128266,
+            "finite_fraction": 0.9994152046783625
+          },
+          {
+            "tissue": "gut_lgr5",
+            "mark": "on",
+            "half_life_mean": 67.19311976709957,
+            "half_life_ci_low": 46.95618232010301,
+            "half_life_ci_high": 102.62172658397974,
+            "half_life_std": 14.379244568593329,
+            "r2_mean": 0.827351963714354,
+            "finite_fraction": 1.0
+          },
+          {
+            "tissue": "skin_stem",
+            "mark": "off",
+            "half_life_mean": 214.00779201361445,
+            "half_life_ci_low": 110.25174155241615,
+            "half_life_ci_high": 483.1632345398467,
+            "half_life_std": 263.7929216291416,
+            "r2_mean": 0.5669045388650267,
+            "finite_fraction": 0.9991228070175439
+          },
+          {
+            "tissue": "skin_stem",
+            "mark": "on",
+            "half_life_mean": 115.13454962491748,
+            "half_life_ci_low": 76.95146360807703,
+            "half_life_ci_high": 185.20815489755103,
+            "half_life_std": 28.91410408754429,
+            "r2_mean": 0.7753483750976301,
+            "finite_fraction": 1.0
+          }
+        ]
+      }
+    },
+    "synergy": {
+      "pass": true,
+      "estimate": 1.1848639112069823,
+      "ci": [
+        1.1810582500923452,
+        1.1886695723216194
+      ],
+      "evidence": {
+        "has_feasible_optimum": true,
+        "best_dose": {
+          "amplification": 1.5714285714285714,
+          "cyclin_throttle": 0.17000000000000004
+        },
+        "best_objective": 1.1848639112069823,
+        "best_objective_ci": [
+          1.1810582500923452,
+          1.1886695723216194
+        ],
+        "bootstrap_stability": 1.0,
+        "objective_table": [
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.17000000000000004,
+            "objective_mean": 1.1848639112069823,
+            "objective_sem": 0.0019416638339985704,
+            "synergy_factor": 0.5640743298238747,
+            "viability_ci_low": 0.8505969002787004,
+            "mutation_reduction_mean": 2.1005457056997106
+          },
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.15500000000000003,
+            "objective_mean": 1.1564512010879735,
+            "objective_sem": 0.00186020124851979,
+            "synergy_factor": 0.5512833100625835,
+            "viability_ci_low": 0.8513485779218718,
+            "mutation_reduction_mean": 2.097743900421526
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.2,
+            "objective_mean": 1.1269068394525459,
+            "objective_sem": 0.0017713107819995045,
+            "synergy_factor": 0.5663913465521471,
+            "viability_ci_low": 0.870078030778733,
+            "mutation_reduction_mean": 1.9896258061011756
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.18500000000000005,
+            "objective_mean": 1.1024077608577811,
+            "objective_sem": 0.0017470340183188908,
+            "synergy_factor": 0.555361372154144,
+            "viability_ci_low": 0.8698843524039075,
+            "mutation_reduction_mean": 1.9850277965529821
+          },
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.12500000000000003,
+            "objective_mean": 1.0983196367624048,
+            "objective_sem": 0.0017881895812338735,
+            "synergy_factor": 0.5255135359014774,
+            "viability_ci_low": 0.8549910296195767,
+            "mutation_reduction_mean": 2.089993048187281
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.17000000000000004,
+            "objective_mean": 1.0763622956386356,
+            "objective_sem": 0.0017048756856985034,
+            "synergy_factor": 0.5442765755871021,
+            "viability_ci_low": 0.8703645472729354,
+            "mutation_reduction_mean": 1.9776017266177248
+          },
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.11000000000000001,
+            "objective_mean": 1.0693416811498364,
+            "objective_sem": 0.0017308716464961502,
+            "synergy_factor": 0.5125687801760022,
+            "viability_ci_low": 0.854572500476714,
+            "mutation_reduction_mean": 2.086240369112324
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.15500000000000003,
+            "objective_mean": 1.053604841725329,
+            "objective_sem": 0.0016361562979815567,
+            "synergy_factor": 0.5331477376755633,
+            "viability_ci_low": 0.8703180227370407,
+            "mutation_reduction_mean": 1.9761967786243888
+          },
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.09500000000000001,
+            "objective_mean": 1.0398866713605812,
+            "objective_sem": 0.0016872507237916466,
+            "synergy_factor": 0.4996071429379859,
+            "viability_ci_low": 0.857408596401389,
+            "mutation_reduction_mean": 2.0814087349620976
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.14,
+            "objective_mean": 1.0300792756050245,
+            "objective_sem": 0.0015868931454987188,
+            "synergy_factor": 0.5219858136524729,
+            "viability_ci_low": 0.8730112393201165,
+            "mutation_reduction_mean": 1.97338557612761
+          },
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.08000000000000002,
+            "objective_mean": 1.0115246745031712,
+            "objective_sem": 0.0016257497957995666,
+            "synergy_factor": 0.48664603369137516,
+            "viability_ci_low": 0.8610524142138002,
+            "mutation_reduction_mean": 2.0785634824359165
+          },
+          {
+            "amplification": 1.1428571428571428,
+            "cyclin_throttle": 0.2,
+            "objective_mean": 1.0073370268028843,
+            "objective_sem": 0.001504810617725762,
+            "synergy_factor": 0.5431070041542547,
+            "viability_ci_low": 0.8857528092482324,
+            "mutation_reduction_mean": 1.8547671436709694
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.12500000000000003,
+            "objective_mean": 1.006301089034495,
+            "objective_sem": 0.0015776598245710691,
+            "synergy_factor": 0.5108018904596506,
+            "viability_ci_low": 0.8732315435248041,
+            "mutation_reduction_mean": 1.9700418260569943
+          },
+          {
+            "amplification": 1.1428571428571428,
+            "cyclin_throttle": 0.185,
+            "objective_mean": 0.9879590223608884,
+            "objective_sem": 0.0014610956277635691,
+            "synergy_factor": 0.5337343873171879,
+            "viability_ci_low": 0.8856155219047523,
+            "mutation_reduction_mean": 1.8510312354556306
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.11000000000000001,
+            "objective_mean": 0.9810486914107067,
+            "objective_sem": 0.0015388348606431188,
+            "synergy_factor": 0.4996071429379859,
+            "viability_ci_low": 0.8753194664552961,
+            "mutation_reduction_mean": 1.9636402426946087
+          },
+          {
+            "amplification": 1.5714285714285714,
+            "cyclin_throttle": 0.06500000000000002,
+            "objective_mean": 0.9810291692897152,
+            "objective_sem": 0.0015903083352292163,
+            "synergy_factor": 0.47370285910453985,
+            "viability_ci_low": 0.860573329740591,
+            "mutation_reduction_mean": 2.0709800467411053
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.17000000000000004,
+            "objective_mean": 0.9685581253001274,
+            "objective_sem": 0.0014066224279605769,
+            "synergy_factor": 0.5243378939658333,
+            "viability_ci_low": 0.8870469798865996,
+            "mutation_reduction_mean": 1.8472022267443449
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.09500000000000001,
+            "objective_mean": 0.9568180132352241,
+            "objective_sem": 0.0014615525135855372,
+            "synergy_factor": 0.48841278927293824,
+            "viability_ci_low": 0.8770323404925197,
+            "mutation_reduction_mean": 1.9590355417587733
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.15500000000000003,
+            "objective_mean": 0.9495556922803638,
+            "objective_sem": 0.0014103860316634408,
+            "synergy_factor": 0.5149241369898728,
+            "viability_ci_low": 0.890848902210936,
+            "mutation_reduction_mean": 1.844069104686462
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.08000000000000002,
+            "objective_mean": 0.9333739778462653,
+            "objective_sem": 0.0014285856442282305,
+            "synergy_factor": 0.47723004607171965,
+            "viability_ci_low": 0.8758465616549566,
+            "mutation_reduction_mean": 1.9558156187550582
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.14,
+            "objective_mean": 0.9293331098166006,
+            "objective_sem": 0.0014056101040468604,
+            "synergy_factor": 0.5054997781774029,
+            "viability_ci_low": 0.891085560870849,
+            "mutation_reduction_mean": 1.838444149604464
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.12500000000000003,
+            "objective_mean": 0.9115863874321488,
+            "objective_sem": 0.0013427707149711952,
+            "synergy_factor": 0.4960715094124839,
+            "viability_ci_low": 0.8909175479885183,
+            "mutation_reduction_mean": 1.8376108487096443
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.06500000000000002,
+            "objective_mean": 0.910227005732563,
+            "objective_sem": 0.0013775886774960765,
+            "synergy_factor": 0.46607008345390044,
+            "viability_ci_low": 0.8799352756149823,
+            "mutation_reduction_mean": 1.9529831200216794
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.2,
+            "objective_mean": 0.8914753230892042,
+            "objective_sem": 0.0012350250902990975,
+            "synergy_factor": 0.5196327579960505,
+            "viability_ci_low": 0.9030799098819318,
+            "mutation_reduction_mean": 1.7155872284248483
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.11000000000000001,
+            "objective_mean": 0.8910292186274255,
+            "objective_sem": 0.0013125745674381674,
+            "synergy_factor": 0.48664603369137516,
+            "viability_ci_low": 0.8944656668639118,
+            "mutation_reduction_mean": 1.830959582406676
+          },
+          {
+            "amplification": 1.3571428571428572,
+            "cyclin_throttle": 0.05,
+            "objective_mean": 0.8855827496802717,
+            "objective_sem": 0.0013693376297073173,
+            "synergy_factor": 0.45494398053698537,
+            "viability_ci_low": 0.8790868007790201,
+            "mutation_reduction_mean": 1.9465753753571797
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.185,
+            "objective_mean": 0.8756165834488908,
+            "objective_sem": 0.0011968437696076686,
+            "synergy_factor": 0.5119798496543398,
+            "viability_ci_low": 0.9007481632029145,
+            "mutation_reduction_mean": 1.7102559486277793
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.09500000000000001,
+            "objective_mean": 0.8727446895091405,
+            "objective_sem": 0.0012936199868060752,
+            "synergy_factor": 0.47723004607171965,
+            "viability_ci_low": 0.8911142780720674,
+            "mutation_reduction_mean": 1.8287714629308602
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.17000000000000004,
+            "objective_mean": 0.860552713991399,
+            "objective_sem": 0.0011896984195667961,
+            "synergy_factor": 0.504321320972542,
+            "viability_ci_low": 0.9024179708413899,
+            "mutation_reduction_mean": 1.7063579868721277
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.08000000000000002,
+            "objective_mean": 0.8529048066612298,
+            "objective_sem": 0.0012514501707615656,
+            "synergy_factor": 0.46783021466963354,
+            "viability_ci_low": 0.8924317639447167,
+            "mutation_reduction_mean": 1.8231075717576801
+          },
+          {
+            "amplification": 1.142857142857143,
+            "cyclin_throttle": 0.06500000000000002,
+            "objective_mean": 0.8341305973348945,
+            "objective_sem": 0.0012019742956666702,
+            "synergy_factor": 0.45845316181916895,
+            "viability_ci_low": 0.8950750194401246,
+            "mutation_reduction_mean": 1.8194456201916365
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.14,
+            "objective_mean": 0.8312402814821114,
+            "objective_sem": 0.0011131498699806807,
+            "synergy_factor": 0.48900177432315844,
+            "viability_ci_low": 0.906191540000257,
+            "mutation_reduction_mean": 1.6998717083034212
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.11000000000000001,
+            "objective_mean": 0.8014186585193511,
+            "objective_sem": 0.001086158002174558,
+            "synergy_factor": 0.47370285910453985,
+            "viability_ci_low": 0.9069485869976982,
+            "mutation_reduction_mean": 1.691817229126094
+          },
+          {
+            "amplification": 0.7142857142857143,
+            "cyclin_throttle": 0.2,
+            "objective_mean": 0.7767004997362189,
+            "objective_sem": 0.0009470156372057207,
+            "synergy_factor": 0.4960715094124839,
+            "viability_ci_low": 0.912922693363578,
+            "mutation_reduction_mean": 1.5657026960812452
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.08000000000000002,
+            "objective_mean": 0.7714947321205953,
+            "objective_sem": 0.001023188554944422,
+            "synergy_factor": 0.45845316181916895,
+            "viability_ci_low": 0.910723568781495,
+            "mutation_reduction_mean": 1.6828212702454906
+          },
+          {
+            "amplification": 0.7142857142857143,
+            "cyclin_throttle": 0.185,
+            "objective_mean": 0.7660628606595755,
+            "objective_sem": 0.0009197900613368033,
+            "synergy_factor": 0.4901798344063277,
+            "viability_ci_low": 0.9154520206260738,
+            "mutation_reduction_mean": 1.5628200241802654
+          },
+          {
+            "amplification": 0.9285714285714286,
+            "cyclin_throttle": 0.05,
+            "objective_mean": 0.7428754463085195,
+            "objective_sem": 0.0009938064072650846,
+            "synergy_factor": 0.4432809015276093,
+            "viability_ci_low": 0.9113353636429995,
+            "mutation_reduction_mean": 1.6758571004265346
+          },
+          {
+            "amplification": 0.5,
+            "cyclin_throttle": 0.2,
+            "objective_mean": 0.6664091862813644,
+            "objective_sem": 0.0006666575834076656,
+            "synergy_factor": 0.47252769565540637,
+            "viability_ci_low": 0.9220832109376723,
+            "mutation_reduction_mean": 1.410307146879592
+          },
+          {
+            "amplification": 0.5,
+            "cyclin_throttle": 0.17000000000000004,
+            "objective_mean": 0.6517326019201538,
+            "objective_sem": 0.0006723579674754193,
+            "synergy_factor": 0.46431079665910435,
+            "viability_ci_low": 0.9259536827063816,
+            "mutation_reduction_mean": 1.4036559274727656
+          },
+          {
+            "amplification": 0.5,
+            "cyclin_throttle": 0.14,
+            "objective_mean": 0.6373594099040054,
+            "objective_sem": 0.0006520826166274881,
+            "synergy_factor": 0.4561132279447145,
+            "viability_ci_low": 0.9276149063681963,
+            "mutation_reduction_mean": 1.3973710273126738
+          },
+          {
+            "amplification": 0.5,
+            "cyclin_throttle": 0.11000000000000001,
+            "objective_mean": 0.6231707056769428,
+            "objective_sem": 0.0006160445011771906,
+            "synergy_factor": 0.44793936722219657,
+            "viability_ci_low": 0.9267870120731181,
+            "mutation_reduction_mean": 1.3911943251190604
+          },
+          {
+            "amplification": 0.5,
+            "cyclin_throttle": 0.08000000000000002,
+            "objective_mean": 0.6084625601895431,
+            "objective_sem": 0.0005949519051880502,
+            "synergy_factor": 0.4397935411918067,
+            "viability_ci_low": 0.9290504860508019,
+            "mutation_reduction_mean": 1.3835186359050575
+          },
+          {
+            "amplification": 0.5,
+            "cyclin_throttle": 0.05,
+            "objective_mean": 0.5947028604540746,
+            "objective_sem": 0.0005780546134962609,
+            "synergy_factor": 0.4316800165217519,
+            "viability_ci_low": 0.9298790237380582,
+            "mutation_reduction_mean": 1.3776474186733825
+          }
+        ]
+      }
+    }
+  },
+  "global_tranche1_verdict": false,
+  "best_dose_per_tissue": {
+    "blood_cd34": {
+      "amplification": 1.7857142857142856,
+      "cyclin_throttle": 0.17000000000000004,
+      "mutation_reduction_mean": 2.361637282358862,
+      "mutation_reduction_ci": [
+        2.271285696980989,
+        2.4526311685417364
+      ],
+      "viability_ci_low": 0.8510134848133922,
+      "sphase_fold_ci_low": 7.328284976436789,
+      "leakage_ci_high": 0.3463956577002399
+    },
+    "gut_lgr5": {
+      "amplification": 1.5714285714285714,
+      "cyclin_throttle": 0.12500000000000003,
+      "mutation_reduction_mean": 1.9964777305664219,
+      "mutation_reduction_ci": [
+        1.908102468599271,
+        2.0853401952478388
+      ],
+      "viability_ci_low": 0.850096822680575,
+      "sphase_fold_ci_low": 6.423618554119723,
+      "leakage_ci_high": 0.3462967087992755
+    },
+    "skin_stem": {
+      "amplification": 1.5714285714285714,
+      "cyclin_throttle": 0.2,
+      "mutation_reduction_mean": 2.0560900446206576,
+      "mutation_reduction_ci": [
+        1.9764346218944178,
+        2.1346804944292197
+      ],
+      "viability_ci_low": 0.8510569365850897,
+      "sphase_fold_ci_low": 6.914072687407047,
+      "leakage_ci_high": 0.3463747150720244
+    }
+  },
+  "assumptions_hash": "1b74924fe4bbf5ec08e145a1e834cd076665e67bd37cd13dfb0b1b514de5c937",
+  "profile": "quick"
+}

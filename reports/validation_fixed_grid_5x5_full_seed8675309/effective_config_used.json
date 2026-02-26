@@ -1,0 +1,145 @@
+{
+  "seed": 8675309,
+  "runtime_profile": "full",
+  "tissues": [
+    "blood_cd34",
+    "gut_lgr5",
+    "skin_stem"
+  ],
+  "donor_ages": [
+    25,
+    40,
+    60
+  ],
+  "dose_ranges": {
+    "amplification": {
+      "min": 1.552,
+      "max": 1.624,
+      "n_coarse": 5
+    },
+    "cyclin_throttle": {
+      "min": 0.15275,
+      "max": 0.16175,
+      "n_coarse": 5
+    },
+    "refine": {
+      "top_k": 0,
+      "step_fraction": 0.3,
+      "neighbor_radius": 1
+    }
+  },
+  "washout_priors": {
+    "blood_cd34": {
+      "on_half_life": 95.0,
+      "off_half_life": 170.0,
+      "measurement_cv": 0.08
+    },
+    "gut_lgr5": {
+      "on_half_life": 65.0,
+      "off_half_life": 120.0,
+      "measurement_cv": 0.1
+    },
+    "skin_stem": {
+      "on_half_life": 110.0,
+      "off_half_life": 180.0,
+      "measurement_cv": 0.07
+    }
+  },
+  "viability_threshold": 0.85,
+  "gate_rule": "confidence_bound_95",
+  "fucci_threshold": 2.0,
+  "fucci_leakage_cap": 0.45,
+  "washout_r2_floor": 0.9,
+  "synergy_stability_min": 0.55,
+  "profiles": {
+    "quick": {
+      "replicates_per_condition": 500,
+      "n_divisions": 90,
+      "fucci_cells": 160,
+      "bootstrap_n": 300,
+      "workers": "auto"
+    },
+    "full": {
+      "replicates_per_condition": 900,
+      "n_divisions": 80,
+      "fucci_cells": 160,
+      "bootstrap_n": 700,
+      "workers": "auto"
+    }
+  },
+  "tissue_params": {
+    "blood_cd34": {
+      "alpha": 1.05,
+      "beta": 0.2,
+      "v0": 0.975,
+      "p1": 0.01,
+      "p2": 0.07,
+      "p3": 0.025,
+      "p4": 0.03
+    },
+    "gut_lgr5": {
+      "alpha": 0.92,
+      "beta": 0.18,
+      "v0": 0.965,
+      "p1": 0.012,
+      "p2": 0.085,
+      "p3": 0.03,
+      "p4": 0.035
+    },
+    "skin_stem": {
+      "alpha": 0.85,
+      "beta": 0.16,
+      "v0": 0.97,
+      "p1": 0.011,
+      "p2": 0.08,
+      "p3": 0.028,
+      "p4": 0.032
+    }
+  },
+  "baseline_mutation_rates": {
+    "blood_cd34": {
+      "25": 0.9,
+      "40": 1.05,
+      "60": 1.3
+    },
+    "gut_lgr5": {
+      "25": 1.1,
+      "40": 1.35,
+      "60": 1.7
+    },
+    "skin_stem": {
+      "25": 1.0,
+      "40": 1.25,
+      "60": 1.55
+    }
+  },
+  "global_noise": {
+    "mutation_noise_sigma": 0.16,
+    "viability_noise_sigma": 0.015,
+    "expression_noise_sigma": 0.1,
+    "stress_scale": 0.55,
+    "stress_penalty": 0.02,
+    "leakage_baseline": 0.34,
+    "leakage_noise_sigma": 0.03
+  },
+  "objective": {
+    "synergy_k": 2.2
+  },
+  "sensitivity_configs": [],
+  "washout_design": {
+    "n_timepoints": 24,
+    "measurement_cv_scale": 0.55,
+    "model_family": "auto_single_or_bi",
+    "holdout_fraction": 0.25,
+    "retention_horizon_divisions": 35,
+    "retention_min": 0.6,
+    "predictive_metric": "median_abs_log_error",
+    "predictive_mae_max": 0.2,
+    "predictive_coverage_min": 0.8,
+    "gate_off_mark_required": false
+  },
+  "strict_gate": {
+    "require_all_tissues": true,
+    "require_all_tissue_age": false
+  }
+}

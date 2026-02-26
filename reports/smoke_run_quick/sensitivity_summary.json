@@ -1,0 +1,14 @@
+{
+  "primary": {
+    "config": "/private/tmp/starrage_default_quick.json",
+    "out_dir": "/Users/sebastian/Fisac/StarAge/reports/smoke_run_quick",
+    "global_tranche1_verdict": false,
+    "milestones": {
+      "mutation": false,
+      "fucci": true,
+      "washout": false,
+      "synergy": true
+    }
+  },
+  "sensitivity": []
+}

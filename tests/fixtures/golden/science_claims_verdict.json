@@ -1,0 +1,145 @@
+{
+  "assumptions_hash": "bb353e16f1a53a60a82cec0274f89aa495f42fe9c99acd6b1317e43d7fbad0d8",
+  "claims": {
+    "1": {
+      "criteria": {
+        "delta_methylation_min": 0.02,
+        "min_rows_per_locus": 4,
+        "posterior_prob_threshold": 0.7
+      },
+      "details": {
+        "locus_checks": [
+          {
+            "delta_methylation_25_to_60": 5.4385379611,
+            "gene": "MLH1",
+            "locus_id": "blood_mlh1_l1",
+            "posterior_prob_age_slope_gt_0": 0.9833333333,
+            "row_count": 6,
+            "row_pass": true,
+            "tissue": "blood_cd34"
+          },
+          {
+            "delta_methylation_25_to_60": 5.7830266035,
+            "gene": "MSH2",
+            "locus_id": "blood_msh2_l1",
+            "posterior_prob_age_slope_gt_0": 0.975,
+            "row_count": 6,
+            "row_pass": true,
+            "tissue": "blood_cd34"
+          },
+          {
+            "delta_methylation_25_to_60": 5.0382179313,
+            "gene": "MLH1",
+            "locus_id": "gut_mlh1_l1",
+            "posterior_prob_age_slope_gt_0": 0.9916666667,
+            "row_count": 6,
+            "row_pass": true,
+            "tissue": "gut_lgr5"
+          },
+          {
+            "delta_methylation_25_to_60": 5.2413891688,
+            "gene": "MSH2",
+            "locus_id": "gut_msh2_l1",
+            "posterior_prob_age_slope_gt_0": 0.9833333333,
+            "row_count": 6,
+            "row_pass": true,
+            "tissue": "gut_lgr5"
+          }
+        ],
+        "required_locus_count": 4
+      },
+      "status": "pass"
+    },
+    "2": {
+      "criteria": {
+        "posterior_prob_threshold": 0.7,
+        "ppc_error_max": 0.5
+      },
+      "details": {
+        "posterior_prob_beta_methyl_to_e2f_lt_0": 1.0,
+        "ppc_error": 0.3177728676
+      },
+      "status": "pass"
+    },
+    "3": {
+      "criteria": {
+        "effect_min": 0.01,
+        "posterior_prob_threshold": 0.7
+      },
+      "details": {
+        "effect_mean": 0.0984367763,
+        "perturbation_dataset_present": true,
+        "posterior_prob_effect_gt_0": 1.0,
+        "targeted_loci_observed": [
+          "blood_mlh1_l1",
+          "blood_msh2_l1",
+          "gut_mlh1_l1",
+          "gut_msh2_l1"
+        ],
+        "targeted_loci_required": [
+          "blood_mlh1_l1",
+          "blood_msh2_l1",
+          "gut_mlh1_l1",
+          "gut_msh2_l1"
+        ]
+      },
+      "status": "pass"
+    },
+    "4": {
+      "criteria": {
+        "mutation_reduction_min": 0.01,
+        "posterior_prob_threshold": 0.7
+      },
+      "details": {
+        "effect_size_proxy": 0.1817131647,
+        "posterior_prob_beta_mmr_to_mutation_lt_0": 0.75
+      },
+      "status": "pass"
+    },
+    "5": {
+      "criteria": {
+        "model_margin_min": 1.0,
+        "required_top_model": "M1",
+        "stability_min": 0.45
+      },
+      "details": {
+        "stability": {
+          "by_tissue": 1.0,
+          "leave_one_donor_out": 1.0
+        },
+        "top_margin_vs_competitors": {
+          "M2": 1304.1425201826,
+          "M3": 1624.0107972823,
+          "M4": 1506.8458552289
+        },
+        "top_model": "M1"
+      },
+      "status": "pass"
+    }
+  },
+  "config_hash": "7ea15897d178c8f45681ec0976078a92849b6eb0da668df37319144e49332e9c",
+  "git_commit": "golden-commit",
+  "preprocessing_hash": "18d6d2a8641244d0ea70492c9fa41f18011f1393178caeb05f107304f4d8379e",
+  "preprocessing_version": "science-preprocess-v1",
+  "provenance": {
+    "assumptions_hash": "bb353e16f1a53a60a82cec0274f89aa495f42fe9c99acd6b1317e43d7fbad0d8",
+    "config_hash": "7ea15897d178c8f45681ec0976078a92849b6eb0da668df37319144e49332e9c",
+    "git_commit": "golden-commit",
+    "preprocessing_hash": "18d6d2a8641244d0ea70492c9fa41f18011f1393178caeb05f107304f4d8379e",
+    "preprocessing_version": "science-preprocess-v1",
+    "schema_version": "science-schema-v1",
+    "science_data_hash": "51afaebd82ef6cd8239a14b70cbff4cb34c99ed6be91e62339076c7ac3ea6602",
+    "seed": 2027
+  },
+  "schema_version": "science-schema-v1",
+  "science_data_hash": "51afaebd82ef6cd8239a14b70cbff4cb34c99ed6be91e62339076c7ac3ea6602",
+  "science_verdict": {
+    "allow_synthetic_science_pass_for_dev": false,
+    "has_real_data": true,
+    "has_synthetic_unvalidated_claims": false,
+    "mode": "real",
+    "pass": true,
+    "top_model": "M1"
+  },
+  "seed": 2027
+}

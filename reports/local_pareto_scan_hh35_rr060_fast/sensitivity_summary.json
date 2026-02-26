@@ -1,0 +1,14 @@
+{
+  "primary": {
+    "config": "/Users/sebastian/Fisac/StarAge/configs/local_pareto_scan_hh35_rr060_fast.yaml",
+    "out_dir": "/Users/sebastian/Fisac/StarAge/reports/local_pareto_scan_hh35_rr060_fast",
+    "global_tranche1_verdict": false,
+    "milestones": {
+      "mutation": false,
+      "fucci": true,
+      "washout": true,
+      "synergy": true
+    }
+  },
+  "sensitivity": []
+}
